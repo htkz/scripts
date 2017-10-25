@@ -1,0 +1,20 @@
+if [ -d $1 ]; then
+  echo "error: $1 already exists."
+  exit 1
+else 
+  mkdir $1
+  cd $1
+  mkdir css js
+  touch index.html css/style.css js/main.js
+  echo "<!DOCTYPE>" >> index.html
+  echo "<html>" >> index.html
+  echo "\t<head>" >> index.html
+  echo '\t\t<meta charset="utf-8">' >> index.html
+  echo '\t\t<link rel="stylesheet" href="css/master.css">' >> index.html
+  echo "\t</head>" >> index.html
+  echo "\t<body>\n" >> index.html
+  echo '\t\t<script src="js/main.js"></script>' >> index.html
+  echo "\t</body>" >> index.html
+  echo "</html>" >> index.html
+  exit 0
+fi
