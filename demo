@@ -16,5 +16,7 @@ else
   echo '\t\t<script src="js/main.js"></script>' >> index.html
   echo "\t</body>" >> index.html
   echo "</html>" >> index.html
+  open -a 'Google Chrome' index.html
+  atom .
   exit 0
 fi
