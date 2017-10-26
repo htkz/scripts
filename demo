@@ -11,7 +11,7 @@ else
   echo "\t<head>" >> index.html
   echo '\t\t<meta charset="utf-8">' >> index.html
   echo '\t\t<link rel="stylesheet" href="css/master.css">' >> index.htm
-  echo '\t\t<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js">'
+  echo '\t\t<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>' >> index.html	  
   echo "\t</head>" >> index.html
   echo "\t<body>\n" >> index.html
   echo '\t\t<script src="js/main.js"></script>' >> index.html
